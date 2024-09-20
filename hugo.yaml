@@ -27,19 +27,19 @@ languages:
     # https://gohugo.io/content-management/menus/#define-in-site-configuration
     menus:
       main:
-        - name: 首页
+        - name: 🏠首页
           pageRef: /
           weight: 1 # 控制在页面上展示的前后顺序
-        - name: 归档
+        - name: 📂归档
           pageRef: archives/
           weight: 5
-        - name: 分类
+        - name: 🎨分类
           pageRef: categories/
           weight: 10
-        - name: 搜索
+        - name: 🔍搜索
           pageRef: search/
           weight: 15
-        - name: 关于
+        - name: 🦆关于
           pageRef: about/
           weight: 20
 
@@ -53,7 +53,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
   author: duck
-  defaultTheme: dark # 默认是暗色背景
+  defaultTheme: auto # 默认是暗色背景
   ShowShareButtons: false # 关闭分享的按钮
   ShowReadingTime: true # 展示预估的阅读时长
   displayFullLangName: true # 展示全名
@@ -65,7 +65,6 @@ params:
   ShowPageNums: true # 展示页面的页数
   ShowToc: true # 展示文章详情页的目录
   comments: false # 评论
-  images: ["https://i.postimg.cc/7hwBy7VS/calcr.png"] # 缺省的图片，比如，博客的封面
   DateFormat: "2006-01-02" # 这个时间是作者自己写的，只能这样写
 
   # 首页的文章上方的一些信息
@@ -91,7 +90,7 @@ params:
       url: "https://steamcommunity.com/id/berserkduck/"
     - name: Email
       title: Email
-      url: "yanxianghe@outlook.com"
+      url: "mailto:yanxianghe@outlook.com"
 
   # 搜索
   fuseOpts:
