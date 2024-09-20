@@ -1,6 +1,6 @@
 baseURL: "https://berserkduck.github.io" # 主站的 URL
-title: berserkduck's Blog # 站点标题
-# copyright: "[©2024 berserkduck's Blog](https://github.com/berserkduck/berserkduck.github.io)" # 网站的版权声明，通常显示在页脚
+title: Ryan's Blog # 站点标题
+copyright: "[©2024 Ryan's Blog](https://github.com/berserkduck/berserkduck.github.io)" # 网站的版权声明，通常显示在页脚
 theme: PaperMod # 主题
 languageCode: zh-cn # 语言
 
@@ -22,7 +22,6 @@ languages:
     taxonomies: # 分类系统
       archives: archives
       category: categories
-      tag: tags
       search: search
       about: about
     # https://gohugo.io/content-management/menus/#define-in-site-configuration
@@ -37,15 +36,12 @@ languages:
         - name: 分类
           pageRef: categories/
           weight: 10
-        - name: 标签
-          pageRef: tags/
-          weight: 15
         - name: 搜索
           pageRef: search/
-          weight: 20
+          weight: 15
         - name: 关于
           pageRef: about/
-          weight: 25
+          weight: 20
 
 
 # ~~~~~~~~~
@@ -79,12 +75,6 @@ params:
     # 首页的 profile 内容
     Content: >
       Welcome to my Blog! 
-
-      <br>
-      <div>
-      ● [My GitHub](https://github.com/berserkduck)
-      <br>
-      </div>
   # 社交帐号的按钮
   socialIcons:
     - name: Github
@@ -93,12 +83,15 @@ params:
     - name: Instagram
       title: Instagram
       url: "https://instagram.com/berserkduck"
-    - name: NeoDB
+    - name: neodb
       title: NeoDB
       url: "https://neodb.social/users/berserk"
     - name: Steam
       title: Steam
       url: "https://steamcommunity.com/id/berserkduck/"
+    - name: Email
+      title: Email
+      url: "yanxianghe@outlook.com"
 
   # 搜索
   fuseOpts:
@@ -111,6 +104,7 @@ params:
       # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
       keys: ["title", "permalink", "summary", "content"]
       includeMatches: true
+  
   # 设置网站的标签页的图标，即 favicon
   assets:
       favicon: "favicon.png"
@@ -154,7 +148,5 @@ markup:
     noClasses: false # TODO: 不知道干啥的，暂时没必要了解，不影响展示
     lineNos: false # 代码行
     lineNumbersInTable: false # 不要设置成 true，否则如果文章开头是代码的话，摘要会由一大堆数字(即代码行号)开头文章
-    # 这里设置 style 没用，得自己加 css
-    # style: "github-dark"
     style: monokai         
 
