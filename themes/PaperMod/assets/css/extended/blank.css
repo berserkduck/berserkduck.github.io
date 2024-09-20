@@ -7,6 +7,11 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     --nav-width: 1380px;
     --article-width: 650px;
     --toc-width: 300px;
+    --hljs-bg: #282C34;
+}
+
+.dark {
+    --hljs-bg: #272b33;
 }
 
 .toc {
@@ -88,4 +93,8 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 .toc li a:hover {
     color: var(--secondary);
+}
+
+code {
+    font-family: "JetBrains Mono", sans-serif;
 }

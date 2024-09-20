@@ -120,6 +120,7 @@ params:
       safari_pinned_tab: "favicon.png"
       disableHLJS: true
 
+
   # 评论的设置
   giscus:
     repo: "-.github.io"
@@ -155,5 +156,5 @@ markup:
     lineNumbersInTable: false # 不要设置成 true，否则如果文章开头是代码的话，摘要会由一大堆数字(即代码行号)开头文章
     # 这里设置 style 没用，得自己加 css
     # style: "github-dark"
-    # style: monokai         
+    style: monokai         
 
