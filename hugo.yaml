@@ -60,12 +60,10 @@ params:
 
   # 首页信息
   homeInfoParams:
-    Title: "Ryan's Blog" # 首页标题
+    Title: "欢迎🎉" # 首页标题
     Content: > # 首页profile内容
-      欢迎🎉
+      这是我的个人博客，用来分享笔记
       <br>
-        这是我的个人博客，用来分享笔记
-
         生成工具：[Hugo](https://gohugo.io/)
         主题：[PaperMod](https://github.com/adityatelange/hugo-PaperMod)
         存储仓库：[Github](https://github.com/berserkduck/berserkduck.github.io)
@@ -134,6 +132,20 @@ outputs:
 
 markup:
   goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+          - - $
+            - $
+        enable: true
     renderer:
       unsafe: true # 可以 unsafe，有些 html 标签和样式可能需要
   highlight:

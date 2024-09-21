@@ -31,6 +31,7 @@
   }
   
   body {
+    font-family: "LXGW WenKai Lite", sans-serif !important;
     font-size: 1rem;
     line-height: 1.5;
     word-break: break-word;
@@ -38,7 +39,7 @@
   
   .post-content pre,
   code {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "JetBrains Mono", "LXGW WenKai Screen", "LXGW WenKai Lite", sans-serif;
     font-size: 1rem;
     line-height: 1.2;
   }
@@ -158,4 +159,19 @@
 
 .toc li a:hover {
     color: var(--secondary);
+}
+
+/* GitHub 样式的表格 */
+.post-content table tr {
+  border: 1px solid #979da3 !important;
+}
+.post-content table tr:nth-child(2n),
+.post-content thead {
+  background-color: var(--code-bg);
+}
+.post-content table th {
+  border: 1px solid #979da3 !important;
+}
+.post-content table td {
+  border: 1px solid #979da3 !important;
 }
