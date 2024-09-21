@@ -4,8 +4,7 @@ copyright: "[©2024 Ryan's Blog](https://github.com/berserkduck/berserkduck.gith
 theme: PaperMod # 主题
 languageCode: zh-cn # 语言
 
-enableInlineShortcodes: true # shortcode，类似于模板变量，可以在写 markdown 的时候便捷地插入，官方文档中有一个视频讲的很通俗
-hasCJKLanguage: true # 是否有 CJK 的字符
+enableInlineShortcodes: true # shortcode
 enableRobotsTXT: true # 允许生成 robots.txt
 buildDrafts: false # 构建时是否包括草稿
 buildFuture: false # 构建未来发布的内容
@@ -22,26 +21,24 @@ languages:
     taxonomies: # 分类系统
       archives: archives
       category: categories
-      search: search
-      about: about
     
     menus: # https://gohugo.io/content-management/menus/#define-in-site-configuration
       main:
-        - name: 🏠首页
+        - name: 首页
           pageRef: /
           weight: 1 # 控制在页面上展示的前后顺序
-        - name: 📂归档
+        - name: 笔记
           pageRef: archives/
-          weight: 5
-        - name: 🎨分类
+          weight: 2
+        - name: 分类
           pageRef: categories/
-          weight: 10
-        - name: 🔍搜索
+          weight: 3
+        - name: 搜索
           pageRef: search/
-          weight: 15
-        - name: 🦆关于
+          weight: 4
+        - name: 关于
           pageRef: about/
-          weight: 20
+          weight: 5
 
 
 paginate: 8 # 每页展示的文章数量，这个没找到文档，应该是主题自己设置的
@@ -57,12 +54,12 @@ params:
   ShowPostNavLinks: true # 展示文章导航链接，就是下一页上一页的那个
   ShowBreadCrumbs: false # 是否展示标题上方的面包屑
   ShowCodeCopyButtons: true # 是否展示复制代码的按钮
-  ShowRssButtonInSectionTermList: true # RSS 相关
+  ShowRssButtonInSectionTermList: false # RSS 相关
   ShowAllPagesInArchive: true # 在归档页面展示所有的页面
   ShowPageNums: true # 展示页面的页数
   ShowToc: true # 展示文章详情页的目录
   comments: false # 评论
-  DateFormat: "2006-01-02" # 这个时间是作者自己写的，只能这样写
+  DateFormat: "2006-01-02" # 时间格式
 
   # 首页的文章上方的一些信息
   homeInfoParams:
@@ -101,7 +98,7 @@ params:
       keys: ["title", "permalink", "summary", "content"]
       includeMatches: true
   
-  # 设置网站的标签页的图标，即 favicon
+  # 标签页图标
   assets:
       favicon: "favicon.png"
       favicon16x16: "favicon.png"
@@ -110,8 +107,7 @@ params:
       safari_pinned_tab: "favicon.png"
       disableHLJS: true
 
-
-  # 评论的设置
+  # 评论
   giscus:
     repo: "-.github.io"
     repoId: "R_kgDOMnoSoA"
@@ -142,7 +138,7 @@ markup:
     anchorLineNos: false # 不要给行号设置锚标
     codeFences: true # 代码围栏
     guessSyntax: true
-    noClasses: false # TODO: 不知道干啥的，暂时没必要了解，不影响展示
+    noClasses: false
     lineNos: false # 代码行
     lineNumbersInTable: false # 不要设置成 true，否则如果文章开头是代码的话，摘要会由一大堆数字(即代码行号)开头文章
     style: monokai         

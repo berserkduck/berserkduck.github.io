@@ -1,8 +1,13 @@
 ---
-title: "关于"
+title: "About"
 layout: "about"
 url: "/about/"
 summary: about
 ---
- 
-苟利国家生死以，岂因祸福避趋之。
+## 关于本站
+这是Ryan的个人博客，主要用来分享我的笔记
+
+## 本站架构
+- 生成工具：[Hugo](https://gohugo.io/)
+- 主题：[PaperMod](https://github.com/adityatelange/hugo-PaperMod)
+- 存储仓库：[Github](https://github.com/berserkduck/berserkduck.github.io)
