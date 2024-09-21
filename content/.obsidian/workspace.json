@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about.md",
+                "file": "archieves.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about.md",
+                "file": "archieves.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about.md",
+                "file": "archieves.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about.md"
+                "file": "archieves.md"
               }
             }
           }
@@ -149,10 +149,10 @@
   },
   "active": "18e49d6957f45598",
   "lastOpenFiles": [
+    "about.md",
     "posts/MaekDown测试.md",
     "archieves.md",
     "search.md",
-    "about.md",
     "posts/关于本站.md",
     "posts/主页.md",
     "posts/Jupyter 导出文件测试.md",
