@@ -26,3 +26,16 @@ _testmain.go
 .DS_Store
 .hugo_build.lock
 resources/_gen/
+/content/Template
+/content/.obsidian
+/content/.sync
+/content/Excalidraw
+/content/Hadoop
+/content/Linux
+/content/Others
+/content/Pandas
+/content/Python
+/content/SQL
+/content/草稿.md
+/content/画板.md
+/content/主页.md

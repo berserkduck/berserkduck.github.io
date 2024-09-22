@@ -16,12 +16,5 @@
       <guid>http://localhost:1313/categories/pandas/</guid>
       <description></description>
     </item>
-    <item>
-      <title>Markdown</title>
-      <link>http://localhost:1313/categories/markdown/</link>
-      <pubDate>Sun, 01 Dec 2019 21:57:40 +0800</pubDate>
-      <guid>http://localhost:1313/categories/markdown/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
