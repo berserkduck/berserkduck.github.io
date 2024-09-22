@@ -1,12 +1,11 @@
 ---
 title: 笔记随想
 date: 2024-09-22T15:29:29+08:00
-lastmod: 2024-09-22T15:29:35+08:00
+lastmod: [":fileModTime", "lastmod"]
 author: Ryan
 summary: 
 draft: false
 categories:
-  - ""
   - Obsidian
 ---
 ---

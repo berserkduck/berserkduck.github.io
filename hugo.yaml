@@ -47,13 +47,15 @@ params:
   defaultTheme: auto # 默认主题
   ShowShareButtons: false # 显示分享按钮
   ShowReadingTime: true # 显示预估的阅读时长
+  ShowWordCount: false # 显示字数统计 不准，关了
+  ShowLastMod: true # 显示最后修改时间
   displayFullLangName: true # 展示全名
   ShowPostNavLinks: true # 展示文章导航链接，就是下一页上一页的那个
   ShowBreadCrumbs: false # 在文章标题上显示文章的目录，比如主页>posts
   ShowCodeCopyButtons: true # 是否展示复制代码的按钮
   ShowRssButtonInSectionTermList: true # RSS
   ShowAllPagesInArchive: true # 在归档页面显示所有的文章
-  ShowPageNums: true # 展示页面的页数
+  ShowPageNums: false # 展示页面的页数
   ShowToc: true # 在文章中显示目录
   comments: true # 评论
   DateFormat: "2006-01-02" # 时间格式

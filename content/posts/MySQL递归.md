@@ -1,7 +1,7 @@
 ---
 title: MySQL递归
 date: 2024-09-22T20:37:31+08:00
-lastmod: 2024-09-22T20:37:42+08:00
+lastmod: [":fileModTime", "lastmod"]
 author: Ryan
 summary: MySQL递归公共表表达式简介
 draft: false
