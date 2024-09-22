@@ -18,7 +18,7 @@ categories:
 
 其中大大小小的笔记有几百篇，主要以学习笔记为主，最近考虑对笔记做一些发布。
 ## 发布
-发布方式有很多，目前我了解的有：
+发布方式有很多，比如：
 ### 官方的发布服务
 我觉得官方发布服务最大的优势支持目录和反向链接，可以保留笔记在Obsidian中的原始结构，比如[官方的帮助文档](https://publish.obsidian.md/help-zh/%E7%94%B1%E6%AD%A4%E5%BC%80%E5%A7%8B)，但是价格太贵，放弃。
 ### Netlify + Obsidian Digital Garden
@@ -29,22 +29,20 @@ categories:
 搭建一个静态网页配合Github Pages实现发布，访问速度可以，可自定义程度高，最终我选择这个方案，Thus Ryan’s Blog was born!🐣
 
 ## 使用
-经过一番折腾，Markdown功能基本都实现了，剩下的就是写笔记了。
+经过一番折腾，网站的功能基本都实现了，剩下的就是写笔记了。
 
-由于发布内容主要来自Notes库，所以我试着把Notes库中的内容全部放到了content目录，但是Hugo会把content目录里的所以文档都编译发布，所以只好又把两个库分开。
+由于发布内容主要来自Notes库，所以我试着把Notes库中的内容全部放到了content目录，但是Hugo会把content目录里的所以文档都编译发布，暂时没找到解决方案，只好把两个库分开。
 
-另一个要折腾地方的是Hugo的[Front matter](https://gohugo.io/content-management/front-matter/)，也就是Obsidian中的文档属性，用于保存一些文档的基本信息，以前不太关注文档属性，但是发布需要发布时间和作者等做一些定义。
+另一个要折腾地方的是Hugo的[Front matter](https://gohugo.io/content-management/front-matter/)，也就是Obsidian中的文档属性，用于保存一些文档的基本信息，以前不太关注文档属性，但是发布需要对发布时间和作者等属性做一些定义。
 
-一种方法是在Hugo的archetypes目录中的default.md文件中定义好常用属性，用`hugo new content`命令生成新文章，但是每次写东西都要先跑到命令行实在不便。
+一种方法是在Hugo的archetypes目录中的default.md文件中定义好常用属性，用`hugo new content`命令生成新文章，但是每次写东西都要先跑到命令行实在不便，故采用Obsidian的模板功能实现。配合Temperlater 插件，可以快速生成文档属性（其实只快了几秒）
 
-Obsidian支持模板功能，配合Temperlater 插件，可以快速生成文档属性（其实只快了几秒）
-
-定义一个模板文件，其中属性如下：
+定义一个模板文件，属性如下：
 ```yaml
 ---
 title: "<% tp.file.title %>"
 date: <% tp.file.creation_date("YYYY-MM-DDTHH:mm:ss+08:00") %>
-lastmod: <% tp.date.now("YYYY-MM-DDTHH:mm:ss+08:00") %>
+lastmod: [":fileModTime", "lastmod"]
 author: "Ryan"
 summary: ""
 draft: false            
@@ -53,9 +51,29 @@ categories: [""]
 ---
 ## 
 ```
-我用的属性是这些，更所属性可以参考[Hugo官方文档](https://gohugo.io/content-management/front-matter/)，参数可以参考[Templater官方文档](https://silentvoid13.github.io/Templater/)
 
 使用方法是在Obsidian中新建一个笔记，修改笔记名称，然后点击Templater按钮选择这个模板，会自动添加上面的内容到新建的笔记中
 
-还剩下一个小问题：lastmod的时间问题，没找到好的解决方法，暂时先手动修改吧
+其他属性
+
+```yaml
+weight:                 # 权重，数字，输入1可以顶置文章
+comments: false         # 评论
+showToc: true           # 显示目录
+TocOpen: true           # 自动展开目录
+autonumbering: true     # 目录自动编号
+hidemeta: false         # 隐藏文章头部信息（创建日期、作者等）
+disableShare: true      # 关闭分享栏
+searchHidden: false     # 该文章不能被搜索到
+showbreadcrumbs: true   # 文章标题顶部显示当前路径
+mermaid: true           # mermaid
+cover:
+    image: ""           # 封面图片
+    hidden: true        # 文章页面隐藏封面图片
+tags:
+- tag 1
+- tag 2
+```
+
+更多属性可以参考[Hugo官方文档](https://gohugo.io/content-management/front-matter/)，Templater参数可以参考[Templater官方文档](https://silentvoid13.github.io/Templater/)
 

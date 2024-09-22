@@ -97,7 +97,7 @@ WITH RECURSIVE cte (n) AS
 | 1   |
 
 
-2. 执行递归部分：`SELECT n + 1 FROM cte WHERE n < 3`，得到`n = 2`
+2. 执行递归部分：`SELECT 1 + 1 FROM cte WHERE n < 3`，得到`n = 2`
 3. 执行union all，得到下表
 
 | n   |
@@ -105,7 +105,7 @@ WITH RECURSIVE cte (n) AS
 | 1   |
 | 2   |
 
-4. 执行递归部分：`SELECT 2 + 1 FROM cte WHERE n < 3`，得到`n = 3
+4. 执行递归部分：`SELECT 2 + 1 FROM cte WHERE n < 3`，得到n = 3
 5. 执行union all，得到下表
 
 | n   |

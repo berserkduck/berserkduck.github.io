@@ -38,7 +38,7 @@ languages:
           weight: 4
 
 
-paginate: 8 # 每页展示的文章数量，这个没找到文档，应该是主题自己设置的
+paginate: 8 # 每页展示的文章数量
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -46,7 +46,7 @@ params:
   author: Ryan
   defaultTheme: auto # 默认主题
   ShowShareButtons: false # 显示分享按钮
-  ShowReadingTime: true # 显示预估的阅读时长
+  ShowReadingTime: false # 显示预估的阅读时长
   ShowWordCount: false # 显示字数统计 不准，关了
   ShowLastMod: true # 显示最后修改时间
   displayFullLangName: true # 展示全名
@@ -67,7 +67,7 @@ params:
       这是我的个人博客，用来分享笔记
       <br>
       <div>
-        本站生成工具：[Hugo](https://gohugo.io/)
+        本站构建工具：[Hugo](https://gohugo.io/)
       <br>
       <div>
         主题：[PaperMod](https://github.com/adityatelange/hugo-PaperMod)
