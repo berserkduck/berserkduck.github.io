@@ -12,7 +12,7 @@ categories:
 ---
 ## 从笔记说起
 
-我使用[Onsidian](https://obsidian.md/)已经一年多，目前有三个库：
+我使用[Obsidian](https://obsidian.md/)已经一年多，目前有三个库：
 - Archive：以前的笔记，目前暂时不用
 - Notes：正在用的库
 - content：连接了本站的content文件夹，用来编写发布内容
@@ -34,10 +34,14 @@ categories:
 
 由于发布内容主要来自Notes库，所以我试着把Notes库中的内容全部放到了content目录，但是Hugo会把content目录里的所以文档都编译发布，所以只好又把两个库分开。
 
-另一个要折腾地方的是Hugo的[Front matter](https://gohugo.io/content-management/front-matter/)，也就是Obsidian中的文档属性，用于保存一些文档的基本信息，以前不太关注文档的属性，但是发布需要
+另一个要折腾地方的是Hugo的[Front matter](https://gohugo.io/content-management/front-matter/)，也就是Obsidian中的文档属性，用于保存一些文档的基本信息，以前不太关注文档属性，但是发布需要发布时间和作者等做一些定义。
 
-一种方法是在Hugo的archetypes目录中的default.md文件中定义好常用属性，用`hugo new content`命令生成新文章，但是每次写东西都要先跑到命令行实在不便。由于Obsidian支持模板，所以我写了一个模板文件，其中属性如下：
-```md
+一种方法是在Hugo的archetypes目录中的default.md文件中定义好常用属性，用`hugo new content`命令生成新文章，但是每次写东西都要先跑到命令行实在不便。
+
+Obsidian支持模板功能，配合Temperlater 插件，可以快速生成文档属性（其实只快了几秒）
+
+定义一个模板文件，其中属性如下：
+```yaml
 ---
 title: "<% tp.file.title %>"
 date: <% tp.file.creation_date("YYYY-MM-DDTHH:mm:ss+08:00") %>
@@ -50,7 +54,7 @@ categories: [""]
 ---
 ## 
 ```
-更多参数可以参考[Templater官方文档](https://silentvoid13.github.io/Templater/)
+我用的属性是这些，更所属性可以参考[Hugo官方文档](https://gohugo.io/content-management/front-matter/)，参数可以参考[Templater官方文档](https://silentvoid13.github.io/Templater/)
 
 使用方法是在Obsidian中新建一个笔记，修改笔记名称，然后点击Templater按钮选择这个模板，会自动添加上面的内容到新建的笔记中
 

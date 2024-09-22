@@ -4,12 +4,12 @@ copyright: "[©2024 Ryan](https://github.com/berserkduck/berserkduck.github.io)"
 theme: PaperMod # 主题
 languageCode: zh-cn # 语言
 
-enableInlineShortcodes: true # shortcode
-enableRobotsTXT: true # 允许生成 robots.txt
+enableInlineShortcodes: true # 启用shortcode
+enableRobotsTXT: true # 开启robots.txt
 buildDrafts: false # 构建时是否包括草稿
 buildFuture: false # 构建未来发布的内容
 buildExpired: false # 构建过期的内容
-enableEmoji: true # 允许 emoji
+enableEmoji: true # 开启emoji
 pygmentsUseClasses: true
 defaultContentLanguage: zh # 顶部首先展示的语言界面
 defaultContentLanguageInSubdir: false # 是否要在地址栏加上默认的语言代码
@@ -44,21 +44,21 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
   author: Ryan
-  defaultTheme: auto # 默认是暗色背景
-  ShowShareButtons: false # 分享按钮
-  ShowReadingTime: true # 展示预估的阅读时长
+  defaultTheme: auto # 默认主题
+  ShowShareButtons: false # 显示分享按钮
+  ShowReadingTime: true # 显示预估的阅读时长
   displayFullLangName: true # 展示全名
   ShowPostNavLinks: true # 展示文章导航链接，就是下一页上一页的那个
-  ShowBreadCrumbs: false # 是否展示标题上方的面包屑
+  ShowBreadCrumbs: false # 在文章标题上显示文章的目录，比如主页>posts
   ShowCodeCopyButtons: true # 是否展示复制代码的按钮
-  ShowRssButtonInSectionTermList: false # RSS 相关
-  ShowAllPagesInArchive: true # 在归档页面展示所有的页面
+  ShowRssButtonInSectionTermList: true # RSS
+  ShowAllPagesInArchive: true # 在归档页面显示所有的文章
   ShowPageNums: true # 展示页面的页数
-  ShowToc: true # 展示文章详情页的目录
-  comments: false # 评论
+  ShowToc: true # 在文章中显示目录
+  comments: true # 评论
   DateFormat: "2006-01-02" # 时间格式
 
-  # 首页信息
+  # 首页信息 https://github.com/adityatelange/hugo-PaperMod/wiki/Features#home-info-mode
   homeInfoParams:
     Title: "欢迎🎉" # 首页标题
     Content: > # 首页profile内容
@@ -95,7 +95,7 @@ params:
   # 搜索
   fuseOpts:
       isCaseSensitive: false # 是否大小写敏感
-      shouldSort: true # 是否排序
+      shouldSort: true # 排序
       location: 0
       distance: 1000
       threshold: 0.4
@@ -113,12 +113,12 @@ params:
       safari_pinned_tab: "favicon.png"
       disableHLJS: true
 
-  # 评论
+  # 评论 https://giscus.app/zh-CN
   giscus:
-    repo: "-.github.io"
-    repoId: "R_kgDOMnoSoA"
+    repo: "berserkduck/berserkduck.github.io"
+    repoId: "R_kgDOM0In-g"
     category: "Announcements"
-    categoryId: "DIC_kwDOMnoSoM4CiP7L"
+    categoryId: "DIC_kwDOM0In-s4CisA-"
     mapping: "pathname"
     strict: "0"
     reactionsEnabled: "1"
@@ -129,12 +129,12 @@ params:
     lang: "zh-CN"
     crossorigin: "anonymous"
 
-# https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page
+# 搜索 https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page
 outputs:
   home:
-    - HTML # 生成的静态页面
-    - RSS # 这个其实无所谓
-    - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
+    - HTML
+    - RSS
+    - JSON
 
 markup:
   goldmark:
@@ -154,6 +154,7 @@ markup:
         enable: true
     renderer:
       unsafe: true # 可以 unsafe，有些 html 标签和样式可能需要
+  
   highlight:
     anchorLineNos: false # 不要给行号设置锚标
     codeFences: true # 代码围栏
