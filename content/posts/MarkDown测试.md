@@ -1,11 +1,15 @@
 ---
-title: "MarkDown测试"
+title: MarkDown测试
 date: 2024-09-22T08:26:00+08:00
 draft: false
-author: "Ryan"
-description: "测试本站MarkDown语法"
+author: Ryan
+description: 测试本站MarkDown语法
+categories:
+  - Obsidian
+mermaid: true
 ---
-
+---
+这篇文章用来测试本站的Markdown显示情况，同时显示Hugo与Obsidian中Markdown方言的区别。
 ## 标题
 
 # 一级标题
@@ -22,12 +26,14 @@ description: "测试本站MarkDown语法"
 
 ## 文本
 
-粗体不生效
+仔细看！粗体其实是生效的，但是由于字体的原因，看起来像没加粗
+
+Obdisian的高亮语法无效，需要用html的mark标签
 
 | 文本        | 显示                  |
 | --------- | ------------------- |
 | 普通文本      | 普通文本                |
-| 加粗        | ❌**加粗**             |
+| 粗体        | **粗体**              |
 | 斜体        | *斜体*                |
 | 删除线       | ~~删除线~~             |
 | 粗体和斜体     | ***粗体和斜体***         |
@@ -35,6 +41,8 @@ description: "测试本站MarkDown语法"
 | 斜体和删除线    | ~~*斜体删除线*~~         |
 | 粗体，斜体和删除线 | ~~***粗体，斜体和删除线***~~ |
 | 下划线       | <u>下划线</u>          |
+| 高亮        | ❌==高亮==             |
+| 高亮        | <mark>高亮</mark>     |
 ## 段落
 
 仅用回车无法实现换行，需要在两段文本间添加一个空白行进行换行
@@ -117,6 +125,9 @@ print('Hello, World!')
 
 ### Admonition
 
+Admonition来自[LoveIt主题](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#4-admonition)，需要配合[Shortcode](https://gohugo.io/content-management/shortcodes/)使用，具体可[参考这篇文章](https://lanwp.org/18-hugo-shortcodes-admonition/)，❌Obsidian的引用格式无效
+
+
 {{< admonition type=note title="note" open=false >}}  {{< /admonition >}}  
 
 {{< admonition type=abstract title="abstract" open=false >}}  {{< /admonition >}}  
@@ -198,3 +209,26 @@ $$
 
 - [x] 完成
 - [ ] 未完成
+
+## Mermaid
+❌Mermaid无效
+
+{{ < mermaid  align="center"  > }} 
+flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+
+{{ < /mermaid > }}
+
+```mermaid
+flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+
+```
