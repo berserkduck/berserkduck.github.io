@@ -7,14 +7,21 @@
     <generator>Hugo -- 0.134.3</generator>
     <language>zh</language>
     <copyright>©2024 Ryan</copyright>
-    <lastBuildDate>Wed, 01 Jan 2020 16:45:40 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Sep 2024 10:25:40 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown测试</title>
-      <link>http://localhost:1313/posts/maekdown%E6%B5%8B%E8%AF%95/</link>
-      <pubDate>Sun, 01 Dec 2019 21:57:40 +0800</pubDate>
-      <guid>http://localhost:1313/posts/maekdown%E6%B5%8B%E8%AF%95/</guid>
-      <description>这篇文章展示了基本的 Markdown 语法和格式.</description>
+      <title>数据透视表</title>
+      <link>http://localhost:1313/posts/%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86%E8%A1%A8/</link>
+      <pubDate>Sun, 22 Sep 2024 10:25:40 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86%E8%A1%A8/</guid>
+      <description>数据透视表</description>
+    </item>
+    <item>
+      <title>MarkDown测试</title>
+      <link>http://localhost:1313/posts/markdown%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Sun, 22 Sep 2024 08:26:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/markdown%E6%B5%8B%E8%AF%95/</guid>
+      <description>测试本站MarkDown语法</description>
     </item>
   </channel>
 </rss>

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archieves.md",
+                "file": "posts/MarkDown测试.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "78fb6e9f42d37f10",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "archieves.md",
+                "file": "posts/MarkDown测试.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "archieves.md",
+                "file": "posts/MarkDown测试.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "archieves.md"
+                "file": "posts/MarkDown测试.md"
               }
             }
           }
@@ -149,9 +150,10 @@
   },
   "active": "18e49d6957f45598",
   "lastOpenFiles": [
-    "about.md",
     "posts/MaekDown测试.md",
+    "posts/MarkDown测试.md",
     "archieves.md",
+    "about.md",
     "search.md",
     "posts/关于本站.md",
     "posts/主页.md",
