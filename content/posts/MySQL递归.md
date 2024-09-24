@@ -1,7 +1,7 @@
 ---
-title: MySQL递归
+title: MySQL递归查询
 date: 2024-09-22T20:37:31+08:00
-lastmod: [":fileModTime", "lastmod"]
+lastmod: 2024-09-24T17:28:31+08:00
 author: Ryan
 summary: MySQL递归公共表表达式简介
 draft: false
@@ -34,7 +34,7 @@ print(factorial(5)) # 输出120，即1×2×3×4×5=120
 ### 斐波那契数列
 斐波那契数列（Fibonacci series）是指这样一个数列：0，1，1，2，3，5，8，13，21，34，55，89……这个数列从第3项开始 ，每一项都等于前两项之和，表达式为：
 $$
-F[n]=F[n-1]+F[n-2] (n>1, F[0]=0, F[1]=1)
+F[n]=F[n-1]+F[n-2]\\ (n>1, F[0]=0, F[1]=1)
 $$
 
 在Python中求斐波那契数（这里求第六个斐波那契数）
@@ -52,9 +52,9 @@ print(fibonacci(6))  # 输出 8
 {{< admonition type=note title="注意" open=true >}} 第0个斐波那契数为0，有些资料中省略了0 {{< /admonition >}}
 
 ## MySQL递归查询
-MySQL 8.0 引入了递归公共表表达式（[Recursive Common Table Expressions](https://dev.mysql.com/doc/refman/8.0/en/with.html#common-table-expressions-recursive)），可以用来处理具有层级关系的数据，比如组织结构图、文件系统目录等。
-### 基本语法
-与普通CTE的区别是递归CTE用`WITH RECURSIVE`引出，基本语法如下
+MySQL 8.0 引入了递归公共表表达式（[Recursive Common Table Expressions](https://dev.mysql.com/doc/refman/8.0/en/with.html#common-table-expressions-recursive)），可以用来处理具有层级关系的数据，比如组织结构、文件系统目录等。
+### 语法
+与普通CTE的区别是递归CTE用`WITH RECURSIVE`引出，基本结构如下
 ```sql
 WITH RECURSIVE cte_name (column1, column2, ...) AS
 ( 
@@ -172,7 +172,7 @@ SELECT * FROM fibonacci;
 
 原题是[力扣3236](https://leetcode.cn/problems/ceo-subordinate-hierarchy/description/)题，这里只求下属层级，先不考虑工资问题
 
-编写一个解决方案来找到首席执行官的下属（**直接** 和 **非直接**），以及他们在 **等级制度中的级别**
+要求：编写一个解决方案来找到首席执行官的下属（**直接** 和 **非直接**），以及他们在 **等级制度中的级别**
 
 ```sql
 Create table if not exists employees  

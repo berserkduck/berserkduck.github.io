@@ -1,7 +1,7 @@
 ---
-title: MarkDown测试
+title: Markdown测试
 date: 2024-09-22T08:26:00+08:00
-lastmod: [":fileModTime", "lastmod"]
+lastmod: 
 draft: false
 author: Ryan
 description: 测试本站MarkDown语法
@@ -27,7 +27,7 @@ mermaid: true
 
 ## 文本
 
-仔细看！粗体其实是生效的，~*但*~是由于字体的原因，看起来像没加粗
+仔细看！粗体其实是生效的，但是由于字体的原因，看起来像没加粗
 
 Obdisian的高亮语法无效，需要用html的mark标签
 

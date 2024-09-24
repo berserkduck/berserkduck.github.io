@@ -1,5 +1,5 @@
 ---
-title: 笔记随想
+title: 发布
 date: 2024-09-22T15:29:29+08:00
 lastmod: [":fileModTime", "lastmod"]
 author: Ryan
@@ -42,7 +42,7 @@ categories:
 ---
 title: "<% tp.file.title %>"
 date: <% tp.file.creation_date("YYYY-MM-DDTHH:mm:ss+08:00") %>
-lastmod: [":fileModTime", "lastmod"]
+lastmod: <% tp.file.last_modified_date("YYYY-MM-DDTHH:mm:ss+08:00") %>
 author: "Ryan"
 summary: ""
 draft: false            
@@ -51,6 +51,7 @@ categories: [""]
 ---
 ## 
 ```
+Hugo提供的设置lastmod的属性是 [":fileModTime", "lastmod"]，可以获取文件修改时间，但是不生效，暂时手动修改
 
 使用方法是在Obsidian中新建一个笔记，修改笔记名称，然后点击Templater按钮选择这个模板，会自动添加上面的内容到新建的笔记中
 
