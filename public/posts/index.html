@@ -182,6 +182,35 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">RFM模型
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> RFM模型 RFM模型是衡量客户价值和客户创造利益能力的重要手段，RFM的含义如下：
+R：最近一次消费 (Recency) F：消费频率 (Frequency) M：消费金额 (Monetary) 通过对R、F、M三个维度的分析评估客户的订单活跃价值，实现客户分群或价值区分。 RFM模型基于一个固定时间点来做模型分析，不同时间计算的的RFM结果可能不一样。
+一般可以把用户分为如下类别：
+R F M 用户类别 高 高 高 重要价值用户 高 低 高 重要发展用户 低 高 高 重要保持用户 低 低 高 重要挽留用户 高 高 低 一般价值用户 高 低 低 一般发展用户 低 高 低 一般保持用户 低 低 低 一般挽留用户 RFM模型的基本实现过程 通过以下案例模拟RFM模型的实现过程
+原始数据 import pandas as pd data = { &#39;用户ID&#39;: [1, 2, 3, 4], &#39;最近交易日期&#39;: [&#39;2024-09-03&#39;, &#39;2024-08-25&#39;, &#39;2024-08-30&#39;, &#39;2024-07-06&#39;], &#39;消费次数&#39;: [3, 5, 1, 12], &#39;消费金额&#39;: [230, 310, 500, 100] } df = pd.DataFrame(data) df[&#39;最近交易日期&#39;] = df[&#39;最近交易日期&#39;].astype(&#39;datetime64[ns]&#39;) df ...</p>
+  </div>
+  <footer class="entry-footer">
+
+
+
+
+
+
+
+
+
+
+
+
+创建:&nbsp;<span title='2024-09-26 00:19:57 +0800 CST'>2024-09-26</span>&nbsp;|&nbsp;更新:&nbsp;2024-09-26&nbsp;|&nbsp;Ryan</footer>
+  <a class="entry-link" aria-label="post link to RFM模型" href="http://localhost:1313/posts/rfm%E6%A8%A1%E5%9E%8B/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">MySQL递归查询
     </h2>
   </header>
@@ -308,58 +337,6 @@ Admonition Admonition来自LoveIt主题，需要配合Shortcode使用，具体
 
 创建:&nbsp;<span title='2024-09-22 08:26:00 +0800 CST'>2024-09-22</span>&nbsp;|&nbsp;更新:&nbsp;2024-09-22&nbsp;|&nbsp;Ryan</footer>
   <a class="entry-link" aria-label="post link to Markdown测试" href="http://localhost:1313/posts/markdown%E6%B5%8B%E8%AF%95/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>import time # 时间库 import numpy as np # numpy库 import pandas as pd # pandas库 from pyecharts.charts import Bar3D # 3D柱形图 读取数据 原始数据文件中有五个sheet，把sheet名放到一个列表中
-sheet_names = [&#34;2015&#34;, &#34;2016&#34;, &#34;2017&#34;, &#34;2018&#34;, &#34;会员等级&#34;] sheet_data = [pd.read_excel(&#34;../data/h_sales.xlsx&#34;, sheet_name=sheet_name) for sheet_name in sheet_names] 数据预处理 把前四个df纵向合并为一个df 删除包含缺失值的行数据 保留订单金额大于1的行数据 提取每年数据的最大提交日期值保存到新列year中 对year分组，提取每组中提交日期列的最大值，保存到新列max_year_date中 这样方便后续针对每年的数据分别做RFM计算，而不是针对4年的数据统一做RFM计算
-# 汇总所有数据, 使用pandas.concat连接前四个dataframe data_merge = pd.concat(sheet_data[:-1], axis=0) # 删除包含缺失值的行数据 data_merge.dropna(inplace=True) # 保留订单金额大于1的行数据 data_merge.query(&#39;订单金额 &gt; 1&#39;, inplace=True) # 提取 提交日期 列的 年份 保存到year新列中 data_merge[&#39;year&#39;] = data_merge[&#39;提交日期&#39;].dt.year # 对year新列分组, 提取每组中提交日期列的最大值, 保存到max_year_date新列中, data_merge[&#39;max_year_date&#39;] = data_merge.groupby([&#39;year&#39;])[&#39;提交日期&#39;].transform(&#39;max&#39;) data_merge ...</p>
-  </div>
-  <footer class="entry-footer">
-
-
-
-
-
-
-
-
-
-
-
-
-更新:&nbsp;0001-01-01&nbsp;|&nbsp;Ryan</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/posts/rfm%E6%A1%88%E4%BE%8B/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>&lt;!DOCTYPE html&gt; Awesome-pyecharts </p>
-  </div>
-  <footer class="entry-footer">
-
-
-
-
-
-
-
-
-
-
-
-
-更新:&nbsp;0001-01-01&nbsp;|&nbsp;Ryan</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/posts/rfm%E6%A8%A1%E5%9E%8B/"></a>
 </article>
     </main>
     
