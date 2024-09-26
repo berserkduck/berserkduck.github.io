@@ -182,6 +182,41 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">同期群分析
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 同期群 Cohort在 剑桥在线词典中的中文释义是“有共同特点（通常指年龄）的一群人”，这里译为同期群。比如2000年出生的人可以划分为一个同期群，1月份新增的用户也可以划分为一个同期群
+同期群分析 同期群分析（Cohort Analysis）指将用户按初始行为的发生时间分组，分析群组行为随时间变化的趋势
+举一个例子
+下表记录了某电商平台2024年1月-4月每月新增用户数，以及该月新增用户在之后月份留存率。
+月份 当月新增用户 &#43;1月 &#43;2月 &#43;3月 &#43;4月 2024年1月 112 46% 38% 32% 5% 2024年2月 235 53% 41% 39% 2024年3月 367 39% 35% 2024年4月 400 47% 2024年5月 367 2024年1月新增112个用户 第二个月有46%的回头客 第三个月有38%的回头客 第四个月有5%的回头客 其他月同理 [!Note] 在每一行中，留存率是对当月新增用户而言的 留存率=某月复购用户数/对应期新增用户数
+在这个表格中，把每一行作为一个同期群，研究新增用户在一段时间后的留存率
+通过跟踪和比较不同群体的行为模式，我们可以更好地理解用户行为随时间的变化趋势，从而制定更有效的策略。
+同期群分析的维度和指标可以根据实际情况调整，比如以天为维度统计用户留存情况或统计回购客单价等
+案例一 计算单月同期群留存情况
+Excel表中存有2023年1-12月的订单数据，假设1月份的用户都是新用户，求1月和2月的留存客户数
+导入数据 import pandas as pd df = pd.read_excel(&#39;./Cohort_Analysis.xlsx&#39;) df.head() ...</p>
+  </div>
+  <footer class="entry-footer">
+
+
+
+
+
+
+
+
+
+
+
+
+创建:&nbsp;<span title='2024-09-26 22:23:13 +0800 CST'>2024-09-26</span>&nbsp;|&nbsp;更新:&nbsp;2024-09-26&nbsp;|&nbsp;Ryan</footer>
+  <a class="entry-link" aria-label="post link to 同期群分析" href="http://localhost:1313/posts/%E5%90%8C%E6%9C%9F%E7%BE%A4%E5%88%86%E6%9E%90/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">RFM模型
     </h2>
   </header>

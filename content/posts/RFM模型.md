@@ -667,6 +667,7 @@ sheet_data = [pd.read_excel("../data/h_sales.xlsx", sheet_name=sheet_name) for s
 ```python
 # 汇总所有数据, 使用pandas.concat连接前四个dataframe
 data_merge = pd.concat(sheet_data[:-1], axis=0)
+data_merge.info()
 
 # 删除包含缺失值的行数据
 data_merge.dropna(inplace=True)
@@ -680,10 +681,37 @@ data_merge['year'] = data_merge['提交日期'].dt.year
 # 对year新列分组, 提取每组中提交日期列的最大值, 保存到max_year_date新列中, 
 data_merge['max_year_date'] = data_merge.groupby(['year'])['提交日期'].transform('max')
 
+data_merge.info()
+
 data_merge
 ```
 
-
+```
+<class 'pandas.core.frame.DataFrame'>
+Index: 204240 entries, 0 to 81348
+Data columns (total 4 columns):
+ #   Column  Non-Null Count   Dtype         
+---  ------  --------------   -----         
+ 0   会员ID    204240 non-null  int64         
+ 1   订单号     204240 non-null  int64         
+ 2   提交日期    204240 non-null  datetime64[ns]
+ 3   订单金额    204238 non-null  float64       
+dtypes: datetime64[ns](1), float64(1), int64(2)
+memory usage: 7.8 MB
+<class 'pandas.core.frame.DataFrame'>
+Index: 202827 entries, 0 to 81348
+Data columns (total 6 columns):
+ #   Column         Non-Null Count   Dtype         
+---  ------         --------------   -----         
+ 0   会员ID           202827 non-null  int64         
+ 1   订单号            202827 non-null  int64         
+ 2   提交日期           202827 non-null  datetime64[ns]
+ 3   订单金额           202827 non-null  float64       
+ 4   year           202827 non-null  int32         
+ 5   max_year_date  202827 non-null  datetime64[ns]
+dtypes: datetime64[ns](2), float64(1), int32(1), int64(2)
+memory usage: 10.1 MB
+```
 
 
 <div>

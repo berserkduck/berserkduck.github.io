@@ -4,7 +4,7 @@ date: 2024-09-22T08:26:00+08:00
 lastmod: 
 draft: false
 author: Ryan
-description: 测试本站MarkDown语法
+summary: 测试本站Markdown语法
 categories:
   - Obsidian
 mermaid: true
@@ -24,6 +24,35 @@ mermaid: true
 ##### 五级标题
 
 ###### 六级标题
+
+### Admonition
+
+Admonition来自[LoveIt主题](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#4-admonition)，需要配合[Shortcode](https://gohugo.io/content-management/shortcodes/)使用，具体可[参考这篇文章](https://lanwp.org/18-hugo-shortcodes-admonition/)，❌Obsidian的引用格式无效
+
+
+{{< admonition type=note title="note" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=abstract title="abstract" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=info title="info" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=tip title="tip" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=success title="success" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=question title="question" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=warning title="warning" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=failure title="failure" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=danger title="danger" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=bug title="bug" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=example title="example" open=false >}}  {{< /admonition >}}  
+
+{{< admonition type=quote title="quote" open=false >}}  {{< /admonition >}}
 
 ## 文本
 
@@ -124,34 +153,6 @@ print('Hello, World!')
 >
 >这是第二行
 
-### Admonition
-
-Admonition来自[LoveIt主题](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#4-admonition)，需要配合[Shortcode](https://gohugo.io/content-management/shortcodes/)使用，具体可[参考这篇文章](https://lanwp.org/18-hugo-shortcodes-admonition/)，❌Obsidian的引用格式无效
-
-
-{{< admonition type=note title="note" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=abstract title="abstract" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=info title="info" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=tip title="tip" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=success title="success" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=question title="question" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=warning title="warning" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=failure title="failure" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=danger title="danger" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=bug title="bug" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=example title="example" open=false >}}  {{< /admonition >}}  
-
-{{< admonition type=quote title="quote" open=false >}}  {{< /admonition >}}
 
 ## 数学公式
 

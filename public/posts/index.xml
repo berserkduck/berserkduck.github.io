@@ -7,8 +7,124 @@
     <generator>Hugo -- 0.134.3</generator>
     <language>zh</language>
     <copyright>©2024 Ryan</copyright>
-    <lastBuildDate>Thu, 26 Sep 2024 02:00:07 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Sep 2024 22:23:13 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>同期群分析</title>
+      <link>http://localhost:1313/posts/%E5%90%8C%E6%9C%9F%E7%BE%A4%E5%88%86%E6%9E%90/</link>
+      <pubDate>Thu, 26 Sep 2024 22:23:13 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E5%90%8C%E6%9C%9F%E7%BE%A4%E5%88%86%E6%9E%90/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;同期群&#34;&gt;同期群&lt;/h2&gt;
+&lt;p&gt;Cohort在 &lt;a href=&#34;https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/cohort#:~:text=COHORT%E7%BF%BB%E8%AF%91&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;剑桥在线词典&lt;/a&gt;
+ 中的中文释义是“有共同特点（通常指年龄）的一群人”，这里译为&lt;strong&gt;同期群&lt;/strong&gt;。比如2000年出生的人可以划分为一个同期群，1月份新增的用户也可以划分为一个同期群&lt;/p&gt;
+&lt;h2 id=&#34;同期群分析&#34;&gt;同期群分析&lt;/h2&gt;
+&lt;p&gt;同期群分析（Cohort Analysis）指将用户按初始行为的发生时间分组，分析群组行为随时间变化的趋势&lt;/p&gt;
+&lt;p&gt;举一个例子&lt;/p&gt;
+&lt;p&gt;下表记录了某电商平台2024年1月-4月每月新增用户数，以及该月新增用户在之后月份留存率。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;月份&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;当月新增用户&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;+1月&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;+2月&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;+3月&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;+4月&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2024年1月&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;112&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;46%&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;38%&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;32%&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;5%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2024年2月&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;235&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;53%&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;41%&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;39%&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2024年3月&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;367&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;39%&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;35%&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2024年4月&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;400&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;47%&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2024年5月&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;367&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;2024年1月新增112个用户
+&lt;ul&gt;
+&lt;li&gt;第二个月有46%的回头客
+&lt;ul&gt;
+&lt;li&gt;第三个月有38%的回头客
+&lt;ul&gt;
+&lt;li&gt;第四个月有5%的回头客
+其他月同理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!Note]
+在每一行中，留存率是对当月新增用户而言的
+留存率=某月复购用户数/对应期新增用户数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在这个表格中，把每一行作为一个同期群，研究新增用户在一段时间后的留存率&lt;/p&gt;
+&lt;p&gt;通过跟踪和比较不同群体的行为模式，我们可以更好地理解用户行为随时间的变化趋势，从而制定更有效的策略。&lt;/p&gt;
+&lt;p&gt;同期群分析的维度和指标可以根据实际情况调整，比如以天为维度统计用户留存情况或统计回购客单价等&lt;/p&gt;
+&lt;h2 id=&#34;案例一&#34;&gt;案例一&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;计算单月同期群留存情况&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Excel表中存有2023年1-12月的订单数据，假设1月份的用户都是新用户，求1月和2月的留存客户数&lt;/p&gt;
+&lt;h3 id=&#34;导入数据&#34;&gt;导入数据&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;read_excel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;./Cohort_Analysis.xlsx&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+&lt;pre&gt;&lt;code&gt;.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/style&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>RFM模型</title>
       <link>http://localhost:1313/posts/rfm%E6%A8%A1%E5%9E%8B/</link>
