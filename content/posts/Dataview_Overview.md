@@ -11,8 +11,8 @@ categories:
 ---
 
 
-# 说明
-为了方便学习Dataview，翻译一下[Dataview的文档](https://blacksmithgu.github.io/obsidian-dataview/)。部分内容在不影响理解的情况下进行了意译，未来可能不会更新。
+## 说明
+[Dataivew](https://github.com/blacksmithgu/obsidian-dataview)是一个[Obsidian](https://obsidian.md/)插件，提供了一种结构化查询语言来对Obsidian库中内容进行查询。为了方便学习Dataview，对[Dataview文档](https://blacksmithgu.github.io/obsidian-dataview/)进行翻译。由于本人水平和精力有限，无法保证翻译完全准确。本文仅供参考，未来可能不会随官方文档同步更新，请务必查看官方文档。
 
 ---
 [原文](https://blacksmithgu.github.io/obsidian-dataview/)
