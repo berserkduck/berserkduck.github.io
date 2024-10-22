@@ -7,8 +7,15 @@
     <generator>Hugo -- 0.134.3</generator>
     <language>zh</language>
     <copyright>©2024 Ryan</copyright>
-    <lastBuildDate>Sat, 19 Oct 2024 11:03:03 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2024 15:28:59 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dataview-在笔记中添加元数据</title>
+      <link>http://localhost:1313/posts/dataview_adding-metadata-to-your-pages/</link>
+      <pubDate>Tue, 22 Oct 2024 15:22:30 +0800</pubDate>
+      <guid>http://localhost:1313/posts/dataview_adding-metadata-to-your-pages/</guid>
+      <description>Dataview文档翻译-在笔记中添加元数据</description>
+    </item>
     <item>
       <title>敬酒一则</title>
       <link>http://localhost:1313/posts/random-thought-about--business-dinner/</link>
