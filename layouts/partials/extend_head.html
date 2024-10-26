@@ -24,3 +24,7 @@
     </style>
 </head>
 </html>
+
+{{ if (.Params.mermaid) }}
+<script async src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+{{ end }}

@@ -213,9 +213,8 @@ $$
 - [ ] 未完成
 
 ## Mermaid
-❌Mermaid无效
 
-{{ < mermaid  align="center"  > }} 
+{{< mermaid  align="center"  >}} 
 flowchart TD
     A[Christmas] -->|Get money| B(Go shopping)
     B --> C{Let me think}
@@ -223,17 +222,8 @@ flowchart TD
     C -->|Two| E[iPhone]
     C -->|Three| F[fa:fa-car Car]
 
-{{ < /mermaid > }}
+{{< /mermaid >}}
 
-```mermaid
-flowchart TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
-
-```
 
 ## 嵌入网页
 
