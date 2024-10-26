@@ -31,7 +31,7 @@ Dataview不能查询库中所有内容。为了进行搜索、过滤和显示，
 
 前置信息（Frontmatter）是Markdown中常用的语法扩展，可以把YAML格式的元数据添加到页面顶部。 Obsidian 原生支持前置信息，在其[官方文档](https://help.obsidian.md/Advanced+topics/YAML+front+matter)中有详细介绍。Dataview会把所有YAML前置信息识别成字段。
 
-```md
+```
     ---
     alias: "document"
     last-reviewed: 2021-08-17
@@ -49,10 +49,12 @@ Dataview不能查询库中所有内容。为了进行搜索、过滤和显示，
 
 可以使用以下查询语句来查询这个笔记：
 
-<pre><code>```dataview
+````
+```dataview
 LIST
 WHERE thoughts.rating = 8
-```</code></pre>
+```
+````
 
 ### 行内字段
 
@@ -73,25 +75,25 @@ Basic Field:: Some random Value
 
 如果需要在句子中定义元数据或在同一行中添加多个字段，可以把字段括在方括号里：
 
-<pre><code>```
+```
 I would rate this a [rating:: 9]! It was [mood:: acceptable].
-```</code></pre>
+```
 
 {{< admonition type=info title="列表和任务中的字段" open=true >}} 
 使用元数据注释列表项目（比如任务）时，需要使用括号语法（因为该字段不是此行中的唯一信息）
 
-<pre><code>```
+```
 - [ ] Send an mail to David about the deadline [due:: 2022-04-05].
-```</code></pre>
+```
 
 括号内的行内字段是明确向特定列表项添加字段的唯一方法，YAML 前置内容始终适用于整个页面（但也可用于列表项的上下文中。）
 {{< /admonition >}} 
 
 还有另一种括号语法，在阅读模式下会隐藏键：
 
-<pre><code>```
+```
 This will not show the (longKeyIDontNeedWhenReading:: key).
-```</code></pre>
+```
 
 这句话会被显示成：
 

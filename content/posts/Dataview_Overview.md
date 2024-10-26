@@ -12,7 +12,7 @@ categories:
 
 
 ## 说明
-[Dataivew](https://github.com/blacksmithgu/obsidian-dataview)是一个[Obsidian](https://obsidian.md/)插件，提供了一种结构化查询语言来对Obsidian库中内容进行查询。为了方便学习Dataview，对[Dataview文档](https://blacksmithgu.github.io/obsidian-dataview/)进行翻译。由于本人水平和精力有限，无法保证翻译完全准确。本文仅供参考，未来可能不会随官方文档同步更新，请务必查看官方文档。
+[Dataivew](https://github.com/blacksmithgu/obsidian-dataview)是一个[Obsidian](https://obsidian.md/)插件，提供了一种结构化查询语言来对Obsidian库中内容进行查询。为了方便学习，对[Dataview文档](https://blacksmithgu.github.io/obsidian-dataview/)进行翻译。由于本人水平和精力有限，无法保证翻译完全准确。本文仅供参考，未来可能不会随官方文档同步更新，请务必查看官方文档。
 
 ---
 [原文](https://blacksmithgu.github.io/obsidian-dataview/)
@@ -94,9 +94,11 @@ DQL由这些部分组成：
 
 例如，查询可以如下所示：
 
-<pre><code>```dataview 
+````
+```dataview 
 LIST 
-```</code></pre>
+```
+````
 
 这会列出库中所有的文件。
 
@@ -104,20 +106,24 @@ LIST
 
 可以添加更多过滤条件：
 
-<pre><code>```dataview
+````
+```dataview
 LIST 
 FROM #poems 
 WHERE author = "Edgar Allan Poe"
-```</code></pre>
+```
+````
 
 这条查询会显示库中所有包含`#poems`标签，且`author` [字段](https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/)的值为`Edgar Allan Poe`的文件。这条查询可以找到上文中提到的示例页面。
 
 `LIST`只是可选四种[查询类型](https://blacksmithgu.github.io/obsidian-dataview/queries/query-types/)之一。例如，使用`TABLE`可以输出更多信息：
 
-<pre><code>```dataview
+````
+```dataview
 TABLE author, published, file.inlinks AS "Mentions" 
 FROM #poems 
-```</code></pre>
+```
+````
 
 输出：
 
@@ -129,10 +135,12 @@ FROM #poems
 
 但这并非Dataview的全部功能。你还可以借助[**函数**](https://blacksmithgu.github.io/obsidian-dataview/reference/functions/)**对数据进行操作**。请注意，这些操作只是查询 - **文件内容不会被修改**。
 
-<pre><code>```dataview 
+````
+```dataview 
 TABLE author, date(now).year - published AS "Age in Yrs", length(file.inlinks) AS "Counts of Mentions" 
 FROM #poems 
-```</code></pre>
+```
+````
 
 输出
 

@@ -7,20 +7,13 @@
     <generator>Hugo -- 0.134.3</generator>
     <language>zh</language>
     <copyright>©2024 Ryan</copyright>
-    <lastBuildDate>Fri, 25 Oct 2024 14:25:35 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2024 15:28:59 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dataview-字段类型</title>
-      <link>http://localhost:1313/posts/dataview_field-types/</link>
-      <pubDate>Fri, 25 Oct 2024 14:24:35 +0800</pubDate>
-      <guid>http://localhost:1313/posts/dataview_field-types/</guid>
-      <description>Dataview文档翻译-字段类型</description>
-    </item>
-    <item>
       <title>Dataview-在笔记中添加元数据</title>
-      <link>http://localhost:1313/posts/dataview_adding-metadata-to-your-pages/</link>
+      <link>http://localhost:1313/posts/dataview_adding_metadata_to_your_pages/</link>
       <pubDate>Tue, 22 Oct 2024 15:22:30 +0800</pubDate>
-      <guid>http://localhost:1313/posts/dataview_adding-metadata-to-your-pages/</guid>
+      <guid>http://localhost:1313/posts/dataview_adding_metadata_to_your_pages/</guid>
       <description>Dataview文档翻译-在笔记中添加元数据</description>
     </item>
     <item>
@@ -32,23 +25,23 @@
     </item>
     <item>
       <title>极简之路</title>
-      <link>http://localhost:1313/posts/%E6%9E%81%E7%AE%80%E4%B9%8B%E8%B7%AF/</link>
+      <link>http://localhost:1313/posts/road_of_minimalism/</link>
       <pubDate>Thu, 03 Oct 2024 19:07:52 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E6%9E%81%E7%AE%80%E4%B9%8B%E8%B7%AF/</guid>
+      <guid>http://localhost:1313/posts/road_of_minimalism/</guid>
       <description>其实是盖楼贴</description>
     </item>
     <item>
-      <title>同期群分析</title>
-      <link>http://localhost:1313/posts/%E5%90%8C%E6%9C%9F%E7%BE%A4%E5%88%86%E6%9E%90/</link>
+      <title>Pandas计算同期群留存情况案例</title>
+      <link>http://localhost:1313/posts/pandas_cohort_analysis_example/</link>
       <pubDate>Thu, 26 Sep 2024 22:23:13 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E5%90%8C%E6%9C%9F%E7%BE%A4%E5%88%86%E6%9E%90/</guid>
+      <guid>http://localhost:1313/posts/pandas_cohort_analysis_example/</guid>
       <description>同期群分析及案例</description>
     </item>
     <item>
       <title>RFM模型</title>
-      <link>http://localhost:1313/posts/rfm%E6%A8%A1%E5%9E%8B/</link>
+      <link>http://localhost:1313/posts/pandas_rfm_example/</link>
       <pubDate>Thu, 26 Sep 2024 00:19:57 +0800</pubDate>
-      <guid>http://localhost:1313/posts/rfm%E6%A8%A1%E5%9E%8B/</guid>
+      <guid>http://localhost:1313/posts/pandas_rfm_example/</guid>
       <description>&lt;hr&gt;
 &lt;h2 id=&#34;rfm模型&#34;&gt;RFM模型&lt;/h2&gt;
 &lt;p&gt;RFM模型是衡量&lt;strong&gt;客户价值&lt;/strong&gt;和&lt;strong&gt;客户创造利益能力&lt;/strong&gt;的重要手段，RFM的含义如下：&lt;/p&gt;
@@ -151,23 +144,128 @@
     </item>
     <item>
       <title>MySQL递归查询</title>
-      <link>http://localhost:1313/posts/mysql%E9%80%92%E5%BD%92/</link>
+      <link>http://localhost:1313/posts/recursive_ctes_in_mysql/</link>
       <pubDate>Sun, 22 Sep 2024 20:37:31 +0800</pubDate>
-      <guid>http://localhost:1313/posts/mysql%E9%80%92%E5%BD%92/</guid>
+      <guid>http://localhost:1313/posts/recursive_ctes_in_mysql/</guid>
       <description>MySQL递归公共表表达式简介</description>
     </item>
     <item>
-      <title>数据透视表</title>
-      <link>http://localhost:1313/posts/%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86%E8%A1%A8/</link>
+      <title>Pandas数据透视表</title>
+      <link>http://localhost:1313/posts/pivot_table_in_pandas/</link>
       <pubDate>Sun, 22 Sep 2024 10:25:40 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86%E8%A1%A8/</guid>
-      <description>数据透视表</description>
+      <guid>http://localhost:1313/posts/pivot_table_in_pandas/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;数据透视表是基于原数据表，按照一定规则呈现汇总数据，方便我们从不同维度去观察数据，Pandas中用&lt;code&gt;pivot_table&lt;/code&gt;函数实现数据透视表&lt;/p&gt;
+&lt;h2 id=&#34;基本语法&#34;&gt;基本语法&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Python&#34; data-lang=&#34;Python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pivot_table&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;aggfunc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;mean&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;margins&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;values：列名或列名列表，是要聚合的数据列，默认聚合所有数值列&lt;/li&gt;
+&lt;li&gt;index：行索引&lt;/li&gt;
+&lt;li&gt;columns：列索引&lt;/li&gt;
+&lt;li&gt;aggfunc：可以传入内置函数或函数列表，默认为mean&lt;/li&gt;
+&lt;li&gt;margins：默认为False，用于添加总计行和总计列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;示例&#34;&gt;示例&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s1&#34;&gt;&amp;#39;Name&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Alice&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Charlie&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;David&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Eve&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Frank&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s1&#34;&gt;&amp;#39;Gender&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Female&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Male&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Male&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Male&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Female&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Male&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s1&#34;&gt;&amp;#39;Age&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;45&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s1&#34;&gt;&amp;#39;Score&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;85&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;90&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;95&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;88&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;92&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataFrame&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Name&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Gender&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Age&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Score&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Alice&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Female&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;25&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;85&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Bob&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Male&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;30&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;90&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Charlie&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Male&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;35&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;80&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;David&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Male&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;40&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;95&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;4&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Eve&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Female&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;45&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;88&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;5&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Frank&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Male&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;50&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;92&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;按性别分组，求平均分&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;result&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pivot_table&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Score&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Gender&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aggfunc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;mean&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Gender&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Score&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Female&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;86.50&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Male&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;89.25&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;按性别和年龄分组求平均分&lt;/p&gt;</description>
     </item>
     <item>
       <title>Markdown测试</title>
-      <link>http://localhost:1313/posts/markdown%E6%B5%8B%E8%AF%95/</link>
+      <link>http://localhost:1313/posts/test_markdown/</link>
       <pubDate>Sun, 22 Sep 2024 08:26:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/markdown%E6%B5%8B%E8%AF%95/</guid>
+      <guid>http://localhost:1313/posts/test_markdown/</guid>
       <description>测试本站Markdown语法</description>
     </item>
   </channel>

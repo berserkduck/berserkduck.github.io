@@ -1,9 +1,9 @@
 ---
-title: "数据透视表"
+title: "Pandas数据透视表"
 date: 2024-09-22T10:25:40+08:00
 lastmod: [":fileModTime", "lastmod"]
 author: "Ryan"
-summary: "数据透视表"
+summary: ""
 draft: false            
 categories: ["Pandas"]
 ---

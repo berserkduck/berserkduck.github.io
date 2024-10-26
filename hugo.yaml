@@ -64,6 +64,7 @@ params:
   homeInfoParams:
     Title: "欢迎🎉" # 首页标题
     Content: > # 首页profile内容
+      读万卷书，行万里路
 
   
   # 社交帐号的按钮
