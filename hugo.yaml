@@ -1,8 +1,8 @@
-baseURL: "https://berserkduck.github.io" # 主站URL
-title: Ryan's Blog # 站点标题
-copyright: "[©2024 Ryan](https://github.com/berserkduck/berserkduck.github.io)" # 网站的版权声明，通常显示在页脚
-theme: PaperMod # 主题
-languageCode: zh-cn # 语言
+baseURL: "https://berserkduck.github.io" 
+title: Ryan's Blog 
+copyright: "[©2024 Ryan](https://github.com/berserkduck/berserkduck.github.io)" 
+theme: PaperMod 
+languageCode: zh-cn 
 
 enableInlineShortcodes: true # 启用shortcode
 enableRobotsTXT: true # 开启robots.txt
@@ -62,11 +62,9 @@ params:
 
   # 首页信息 https://github.com/adityatelange/hugo-PaperMod/wiki/Features#home-info-mode
   homeInfoParams:
-    Title: "欢迎🎉" # 首页标题
-    Content: > # 首页profile内容
-      读万卷书，行万里路
-
-  
+    Title: "(｡･∀･)ﾉﾞ嗨" # 首页标题
+    Content: >  # 首页profile内容
+      --
   # 社交帐号的按钮
   socialIcons:
     - name: Github
@@ -157,3 +155,5 @@ markup:
     lineNumbersInTable: false # 不要设置成 true，否则如果文章开头是代码的话，摘要会由一大堆数字(即代码行号)开头文章
     style: monokai         
 
+frontmatter:
+  lastmod : [':fileModTime', 'lastmod', ':git', ':default'] # 最后修改时间
