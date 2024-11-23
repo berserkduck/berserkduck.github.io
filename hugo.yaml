@@ -156,4 +156,4 @@ markup:
     style: monokai         
 
 frontmatter:
-  lastmod : [':fileModTime', 'lastmod', ':default'] # 最后修改时间
+  lastmod : [':fileModTime', 'lastmod'] # 最后修改时间
