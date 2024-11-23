@@ -1,11 +1,13 @@
 ---
-title: "Pandas数据透视表"
+title: Pandas数据透视表
 date: 2024-09-22T10:25:40+08:00
-lastmod: [":fileModTime", "lastmod"]
-author: "Ryan"
-summary: ""
-draft: false            
-categories: ["Pandas"]
+lastmod:
+  - <% tp.file.last_modified_date("YYYY-MM-DDTHH:mm:ss+08:00") %>
+author: Ryan
+summary: 
+draft: false
+categories:
+  - Pandas
 ---
 ---
 数据透视表是基于原数据表，按照一定规则呈现汇总数据，方便我们从不同维度去观察数据，Pandas中用`pivot_table`函数实现数据透视表

@@ -7,8 +7,15 @@
     <generator>Hugo -- 0.134.3</generator>
     <language>zh</language>
     <copyright>©2024 Ryan</copyright>
-    <lastBuildDate>Sat, 26 Oct 2024 22:32:33 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 23 Nov 2024 12:03:01 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dataview-字段类型</title>
+      <link>http://localhost:1313/posts/dataview_field_types/</link>
+      <pubDate>Fri, 25 Oct 2024 14:24:35 +0800</pubDate>
+      <guid>http://localhost:1313/posts/dataview_field_types/</guid>
+      <description>Dataview文档翻译-字段类型</description>
+    </item>
     <item>
       <title>Dataview-在笔记中添加元数据</title>
       <link>http://localhost:1313/posts/dataview_adding_metadata_to_your_pages/</link>
