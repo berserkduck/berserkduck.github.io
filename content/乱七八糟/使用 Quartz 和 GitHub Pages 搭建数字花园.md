@@ -1,6 +1,16 @@
 Quartz是一个静态博客生成器，可以搭配Obsidian来搭建自己的数字花园
 - [Quartz文档](https://quartz.jzhao.xyz/)
 - [Quartz项目地址](https://github.com/jackyzha0/quartz)
+
+Quartz对Obsidian语法支持较好：
+- 关系谱图✔
+- 双链✔
+- 目录✔
+- 公式✔
+- mermaid✔
+- 标注✔
+
+以上已经涵盖了我使用Obsidian的大部分场景。只要稍微折腾一下就能实现与官方发布相当的效果，~~岂不美哉~~
 ## 准备工作
 最低环境要求：[Node](https://nodejs.org/) v20 以及 `npm` v9.3.1
 
@@ -72,7 +82,7 @@ git push -u origin main
 npx quartz sync
 ```
 
-## 部署到Github Pages
+## 部署到GitHub Pages
 在`quartz/.github/workflows/`目录下创建一个新文件 `deploy.yml`
 ```yml
 name: Deploy Quartz site to GitHub Pages
