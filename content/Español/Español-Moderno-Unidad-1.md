@@ -148,14 +148,19 @@ Li->>Ana: ¿Quiénes? ¿Elena y Manolo?  Qué va! Solo son amigos.
 - taxi（出租车） → taxis
 
 2. 以辅音结尾的名词，变为复数加-es
-- **ciudad**（城市） → ciudades
-- **árbol**（树） → árboles
-- **joven**（年轻人） → jóvenes
+- ciudad（城市） → ciudades
+- árbol（树） → árboles
+- joven（年轻人） → jóvenes
 
 3. 以-z结尾的名词，变为复数，将-z变为-ces
-- **lápiz**（铅笔） → lápices
-- **voz**（声音） → voces
+- lápiz（铅笔） → lápices
+- voz（声音） → voces
 
+有些单词在从单数变为复数时，书写会改变：
+
+1. 为了保持原有发音：**lápiz**（铅笔） → lápices
+2. 为了保持原有重读音节而去掉重音符号：alemán（德国人）→ alemanes
+3. 为了保持原有的重音而添加重音符号：joven（年轻人） → jóvenes
 ## 名词的性
 西语名词有阳性和阴性之分。一般可以根据词尾音素判断词的阴阳性。
 

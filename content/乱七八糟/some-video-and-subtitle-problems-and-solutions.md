@@ -59,6 +59,7 @@ ffmpeg -i input.mkv -map 0:s:0 subtitle.ass
 | 国配版  | 中文  | 差    | 中文硬字幕 |
 | TV原版 | 日语  | 好    | 无     |
 | 英语版  | 日语  | 好    | 英语硬字幕 |
+
 想要看中文字幕只能从b站那个版本提取了
 
 使用的工具是[VSE](https://github.com/YaoFANGUK/video-subtitle-extractor)，试着提取了第一集的字幕，目测提取正确率有60%，还有一些句子会缺失，需要手动编辑，工程量较大，目前没有更好的方案
