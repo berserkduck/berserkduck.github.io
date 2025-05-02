@@ -6,7 +6,7 @@ title: Ryan's Digital Garden
 这是一个用Quartz搭建的数字花园，用来发布我的笔记。
 
 本站搭建方案：
-- 系统： [Quartz](https://github.com/jackyzha0/quartz)
+- 系统：[Quartz](https://github.com/jackyzha0/quartz)
 - 写作：[Obsidian](https://obsidian.md/)
 - 发布：[GitHub Pages](https://pages.github.com/)
 
