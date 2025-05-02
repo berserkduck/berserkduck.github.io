@@ -1,3 +1,7 @@
+---
+title: 使用 Quartz 和 GitHub Pages 搭建数字花园
+date: 2025-05-01
+---
 Quartz是一个静态博客生成器，可以搭配Obsidian来搭建自己的数字花园
 - [Quartz文档](https://quartz.jzhao.xyz/)
 - [Quartz项目地址](https://github.com/jackyzha0/quartz)
