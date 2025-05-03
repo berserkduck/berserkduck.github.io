@@ -130,7 +130,7 @@ Li->>Ana: ¿Quiénes? ¿Elena y Manolo?  Qué va! Solo son amigos.
 - ¿Quién es él/ella?（他是谁/她是谁？）
 - ¿Quién está llamando?（谁在打电话？）
 ## ¿Qué va?
-一个固定口语表达，表示惊讶或反驳，可译为”怎么可能！“、”才不是呢！“，比no语气更强烈，相当于英语"What are you talking about?" 或 "No way!"
+一个固定口语表达，表示惊讶或反驳，可译为“怎么可能！”、“才不是呢！”，比no语气更强烈，相当于英语"What are you talking about?" 或 "No way!"
 # 语法
 ## 普通名词和专有名词
 西语中名词分**普通名词**和**专有名词**

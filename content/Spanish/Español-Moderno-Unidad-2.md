@@ -1,6 +1,6 @@
 ---
 title: 现代西班牙语-第二课
-date:
+date: 2025-05-02
 ---
 
 # ¿Cómo estás?
@@ -81,20 +81,20 @@ quién es nuestro profesor是一个间接疑问句
 | **第三人称** | le (给他/她/您) | les (给他们/她们/您们)               |
 
 ## pues
-是一个连接词，在句中起承上启下的作用，可以翻译为”其实“或”是这样的“，相当于英语中的well
+是一个连接词，在句中起承上启下的作用，可以翻译为“其实”或“是这样的”，相当于英语中的well
 
 ## Cada uno se encarga de una asignatura
 每个人负责一个科目
 
 整句话是主谓宾结构
 
-- 主语：Cada uno，译为每个人，cada是”每个“，uno是”一个人“，相当于英语each one
-- 谓语：se encarga de，表示”负责某事“，相当于英语to take charge of oneself
+- 主语：Cada uno，译为每个人，cada是“每个”，uno是“一个人”，相当于英语each one
+- 谓语：se encarga de，表示“负责某事”，相当于英语to take charge of oneself
 - 宾语：una asignatura，asignatura是科目
 
 encargarse prnl. 管理，照顾，负责
 
-encargarse是一个自复动词（主语发出的动作作用于自身，即自己对自己做某事，比如洗澡，是”我洗我自己“）
+encargarse是一个自复动词（主语发出的动作作用于自身，即自己对自己做某事，比如洗澡，是“我洗我自己”）
 
 se是自复代词，与自复动词搭配使用
 
@@ -183,6 +183,7 @@ se是自复代词，与自复动词搭配使用
 | --- | --- | --- |
 | 阳性  | el  | los |
 | 阴性  | la  | las |
+
 定冠词用在**名词**、**数词**或**形容词**之前，并与之保持性、数一致
 
 ## 介词de的用法
