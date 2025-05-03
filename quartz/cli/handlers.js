@@ -557,7 +557,7 @@ export async function handleSync(argv) {
       })
     }
 
-    const currentTimestamp = new Date().toLocaleString("en-US", {
+    const currentTimestamp = new Date().toLocaleString("zh-CN", {
       dateStyle: "medium",
       timeStyle: "short",
     })
