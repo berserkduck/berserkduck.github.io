@@ -37,11 +37,17 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
+    // Component.DesktopOnly(
+    //   Component.RecentNotes({
+    //     limit: 2,
+    //     showTags: true,
+    //   })
+    // ),
   ],
   right: [
-    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.Graph(),
   ],
 }
 
@@ -61,6 +67,12 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
+    // Component.DesktopOnly(
+    //   Component.RecentNotes({
+    //     limit: 2,
+    //     showTags: true,
+    //   })
+    // ),
   ],
   right: [],
 }
