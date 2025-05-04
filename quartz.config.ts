@@ -1,11 +1,30 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { QuartzPluginData } from "./quartz/plugins/vfile"
 
 /**
  * Quartz 4 Configuration
  *
  * See https://quartz.jzhao.xyz/configuration for more information.
  */
+
+// 自定义文件夹页面的排序函数
+const folderPageSort = (f1: QuartzPluginData, f2: QuartzPluginData) => {
+  // 按发布日期倒序排列（最新的在前面）
+  if (f1.dates?.published && f2.dates?.published) {
+    return f2.dates.published.getTime() - f1.dates.published.getTime()
+  } else if (f1.dates?.published) {
+    return -1
+  } else if (f2.dates?.published) {
+    return 1
+  }
+  
+  // 如果没有日期，则按标题字母顺序排列
+  const title1 = f1.frontmatter?.title || ""
+  const title2 = f2.frontmatter?.title || ""
+  return title1.localeCompare(title2)
+}
+
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "🌳🌱🌼",
@@ -78,7 +97,9 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({
+        sort: folderPageSort, // 使用自定义排序
+      }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,

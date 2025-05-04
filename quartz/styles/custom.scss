@@ -24,3 +24,87 @@
   font-style: normal;
   font-display: swap;
 }
+
+// 隐藏index页面的时间和预计阅读时间
+body[data-slug="index"] .content-meta,
+body[data-slug$="/index"] .content-meta {
+  display: none !important;
+}
+
+// 美化文件夹页面
+.popover-hint {
+  // 文件夹内容样式
+  .page-listing {
+    margin-top: 2rem;
+    
+    // 文件夹笔记计数
+    & > p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--lightgray);
+    }
+    
+    // 文件列表
+    .page-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+      
+      .card {
+        background: rgba(var(--light-rgb), 0.05);
+        border-radius: 5px;
+        padding: 1rem;
+        height: 100%;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid var(--lightgray);
+        display: flex;
+        flex-direction: column;
+        
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        // 笔记标题
+        & h3 {
+          margin-top: 0;
+          margin-bottom: 0.5rem;
+          font-size: 1.2rem;
+        }
+        
+        // 元数据（日期）
+        & .meta {
+          font-size: 0.8rem;
+          opacity: 0.7;
+          margin-bottom: 0.5rem;
+        }
+        
+        // 标签
+        & ul.tags {
+          margin-top: auto;
+          padding-top: 0.5rem;
+          
+          & li {
+            background-color: var(--highlight);
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            
+            & a {
+              color: var(--secondary);
+              opacity: 0.8;
+              
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
