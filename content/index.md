@@ -10,7 +10,7 @@ title: Ryan's Digital Garden
 - 写作：[Obsidian](https://obsidian.md/)
 - 发布：[GitHub Pages](https://pages.github.com/)
 
-搭建细节可参考[[/乱七八糟/how-to-build-this-site|这里]]或[Quartz文档](https://quartz.jzhao.xyz/)
+搭建细节可参考[[/Mess/how-to-build-this-site|这里]]或[Quartz文档](https://quartz.jzhao.xyz/)
 ## 😉 关于我
 Ryan——取自我最爱的电影明星Ryan Gosling（I'm literally him.）——是一个程序员
 
