@@ -31,6 +31,26 @@ body[data-slug$="/index"] .content-meta {
   display: none !important;
 }
 
+// 修复日期换行问题
+time {
+  white-space: nowrap; // 防止日期内部换行
+}
+
+// 修复文件夹页面列表布局，解决日期换行问题
+ul.section-ul {
+  li.section-li {
+    & > .section {
+      // 修改网格布局，增加日期列宽度
+      grid-template-columns: minmax(120px, auto) 3fr 1fr;
+      
+      & .meta {
+        white-space: nowrap; // 防止日期内部换行
+        min-width: 120px; // 确保日期有足够的显示空间
+      }
+    }
+  }
+}
+
 // 美化文件夹页面
 .popover-hint {
   // 文件夹内容样式
@@ -79,6 +99,7 @@ body[data-slug$="/index"] .content-meta {
           font-size: 0.8rem;
           opacity: 0.7;
           margin-bottom: 0.5rem;
+          white-space: nowrap; // 防止日期内部换行
         }
         
         // 标签
