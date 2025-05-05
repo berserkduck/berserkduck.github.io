@@ -7,6 +7,6 @@ description: 这里收集了所有西班牙语学习的相关笔记
 
 ## 学习资源
 
-- 《现代西班牙语》教材
+- [《现代西班牙语》](https://book.douban.com/subject/25912423/)
 - [西语助手](https://www.esdict.cn/)
 - [SpanishDictionary](https://www.spanishdict.com/)
