@@ -11,6 +11,13 @@ title: Ryan's Digital Garden
 - 发布：[GitHub Pages](https://pages.github.com/)
 
 搭建细节可参考[[/Mess/how-to-build-this-site|这里]]或[Quartz文档](https://quartz.jzhao.xyz/)
+
+## 🧩内容
+本站有很多内容，包括但不限于：
+- [[Mess/index|技术笔记]]
+- [[Spanish/index|西班牙语相关]]
+- [[Movie/index|电影记录]]
+
 ## 😉 关于我
 Ryan——取自我最爱的电影明星Ryan Gosling（I'm literally him.）——是一个程序员
 
@@ -21,3 +28,4 @@ INTJ，但经历了重大变故导致可以切换为ENTJ
 - [NeoDB](https://neodb.social/users/berserk/)
 - [Instagram](https://www.instagram.com/berserkduck/)
 - [Steam](https://steamcommunity.com/id/berserkduck/)
+
