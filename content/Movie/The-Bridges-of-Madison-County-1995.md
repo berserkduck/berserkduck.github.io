@@ -1,10 +1,7 @@
 ---
-title: 《廊桥遗梦》分析与感想
+title: 《廊桥遗梦》
 date: 2025-05-05
 ---
-
-> [!Warning] 警告
-> 这是一篇关于电影[《廊桥遗梦》](https://movie.douban.com/subject/1293929/)（The Bridges of Madison County (1995)）的纯主观分析，**有大量剧透，请谨慎阅读**。文章内容仅代表个人观点，并无任何实际意义
 
 > This kind of certainty comes once in a lifetime.
 
